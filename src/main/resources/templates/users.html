@@ -1,0 +1,6 @@
+<html>
+<body>
+<span th:text="${user.email}"></span><br />
+<span th:each="role : ${user.roles}" th:text="${role.authority}"></span><br />
+</body>
+</html>
