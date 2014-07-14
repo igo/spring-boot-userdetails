@@ -67,6 +67,7 @@ public class Application {
 	}
 
 	@Order(Ordered.HIGHEST_PRECEDENCE + 10)
+	@Configuration
 	protected static class AuthenticationSecurity extends GlobalAuthenticationConfigurerAdapter {
 
 		@Autowired

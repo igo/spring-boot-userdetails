@@ -16,7 +16,7 @@ public class UserController {
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String register(Model model) {
-		model.addAttribute("user", userAccountService.getUserByEmail("user@example.com"));
+		model.addAttribute("user", userAccountService.getUserByEmail("user"));
 		return "users";
 	}
 	
